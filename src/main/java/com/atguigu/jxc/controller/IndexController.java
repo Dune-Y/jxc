@@ -2,6 +2,10 @@ package com.atguigu.jxc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Map;
 
 /**
  * @description 系统首页请求控制器
@@ -11,10 +15,11 @@ public class IndexController {
 
     /**
      * 进入登录页面
+     *
      * @return 重定向至登录页面
      */
     @GetMapping("/")
-    public String toIndex(){
+    public String toIndex() {
         return "redirect:login.html";
     }
 }
